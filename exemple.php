@@ -15,7 +15,13 @@ if(isset($_POST['envoyer'])){
 
         header("location:affichage.php");
         exit();
+
     } else {
-        header("location:index.html?error=Veuillez remplir tous les champs");
+        header("location:index.php ");
+        exit();
     }
+      else {
+    header('Location: index.php');
+    exit();
+}
 }
